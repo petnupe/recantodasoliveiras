@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./imgs/favicon.png" type="image/png" />
+   <title>Lar para Idosos</title>
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+   body {
+      background-image: url('./imgs/fundo.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.75);
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+   }
+
+   body::after {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.55);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+   }
+
+   header {
+      background: linear-gradient(to right, white, #556b2f);
+      padding: 35px 20px 20px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+   }
+
+   h1 {
+      color: #556b2f;
+      font-size: 32px;
+      margin-bottom: 10px;
+   }
+
+   nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   nav ul li {
+      margin-right: 10px;
+   }
+
+   nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+   }
+
+   nav ul li a:hover {
+      color: #ffd700;
+   }
+
+   footer a {
+      color: #ffffff;
+   }
+
+   footer a:hover {
+      color: #ffd700;
+   }
+
+   .section-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+
+   .image-container {
+      width: 40%;
+      margin-bottom: 20px;
+   }
+
+   .image-container img {
+      width: 350px;
+      height: auto;
+      border-radius: 4px;
+   }
+
+   #quem-somos h1,
+   #servicos h1,
+   #galeria h1,
+   #contato h1,
+   #onde-estamos h1 {
+      color: #556b2f;
+   }
+
+   #quem-somos .text-container,
+   #servicos .text-container,
+   #onde-estamos .map-container {
+      margin-bottom: 20px;
+      text-align: justify;
+   }
+
+   .text-container {
+      width: 50%;
+      line-height: 30px;
+   }
+
+   #quem-somos {
+      padding-top: 20px;
+   }
+
+   #galeria .carousel-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+   }
+
+   #galeria .carousel-slide {
+      flex-basis: 33.33%;
+      padding: 10px;
+      box-sizing: border-box;
+   }
+
+   #galeria .carousel-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+   }
+
+   #contato label,
+   #contato input[type="submit"] {
+      display: block;
+      margin-bottom: 10px;
+   }
+
+   #contato input[type="text"],
+   #contato input[type="email"],
+   #contato textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      resize: vertical;
+   }
+
+   #contato input[type="submit"] {
+      background-color: #556b2f;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+   }
+
+   #contato input[type="submit"]:hover {
+      background-color: #ffd700;
+   }
+
+   #map {
+      width: 100%;
+      height: 400px;
+      margin-top: 20px;
+   }
+
+   footer {
+      background-color: #556b2f;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+   }
+
+   .logo {
+      width: 300px;
+   }
+
+   #contato h1 {
+      text-align: center;
+   }
+
+   #como-chegar {
+      margin-bottom: 20px;
+   }
+
+   #como-chegar p {
+      margin-bottom: 10px;
+   }
+
+   .endereco {
+      margin-bottom: 10px;
+   }
+</style>
+
+<body>
+   <header>
+      <img class="logo" src="./imgs/logo.png" alt="Logo">
+      <nav>
+         <ul>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#onde-estamos">Onde estamos</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section id="quem-somos">
+      <div class="section-content">
+         <div class="image-container">
+            <img src="./imgs/photo5.jpg" alt="photo 1">
+         </div>
+         <div class="text-container">
+            <h1>Quem Somos</h1>
+            <p>
+               Desde 2019, estamos empenhados em fornecer um serviço excepcional, focado no bem-estar e qualidade de
+               vida dos idosos.
+            </p>
+            <p>O Lar para Idosos Recanto das Oliveiras é um lugar acolhedor e seguro, que se preocupa com o bem-estar e
+               qualidade de vida dos
+               idosos. Nosso objetivo é oferecer um ambiente tranquilo e confortável, onde os idosos possam desfrutar de
+               momentos especiais e receber os cuidados necessários.</p>
+         </div>
+      </div>
+   </section>
+   <section id="servicos">
+      <div class="section-content">
+         <div class="text-container">
+            <h1>Serviços</h1>
+            <p>Nossos serviços são cuidadosamente planejados para atender às necessidades individuais de cada idoso.
+               Contamos com uma equipe de profissionais qualificados, incluindo médica geriatra, enfermeira,
+               nutricionista e
+               cuidadores, que proporcionam um atendimento personalizado e de qualidade.</p>
+            <ul>
+               <li>Assistência médica 24 horas</li>
+               <li>Acompanhamento nutricional</li>
+               <li>Atividades recreativas e de lazer</li>
+               <li>Cuidados de higiene e conforto</li>
+               <li>Ambiente seguro e acessível</li>
+            </ul>
+         </div>
+         <div class="image-container">
+            <img src="./imgs/photo2.jpg" alt="Imagem 2">
+         </div>
+      </div>
+   </section>
+   <section id="galeria">
+      <div class="section-content">
+         <h1>Galeria</h1>
+         <div class="carousel-container">
+            <div class="carousel-slide">
+               <img src="./imgs/photo3.jpg" alt="Imagem 3">
+            </div>
+            <div class="carousel-slide">
+               <img src="./imgs/photo4.jpg" alt="Imagem 4">
+            </div>
+            <div class="carousel-slide">
+               <img src="./imgs/photo1.jpg" alt="Imagem 5">
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="contato">
+      <div class="section-content" style="display: flex; flex-direction: column; align-items: baseline;">
+         <h1>Contato</h1>
+         <div style="display: flex; width: 100%; flex-direction: row; justify-content: space-around;">
+            <div class="image-container">
+               <img src="./imgs/photo6.jpg" alt="Imagem 6">
+            </div>
+            <div style="display: flex; flex-direction: row;">
+               <form action="#" method="POST">
+                  <label for="nome">Nome:</label>
+                  <input type="text" id="nome" name="nome" required>
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="mensagem">Mensagem:</label>
+                  <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                  <input type="submit" value="Enviar">
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="onde-estamos">
+      <div class="section-content" style="display: flex; flex-direction: column; align-items: baseline;">
+         <h1>Onde estamos</h1>
+
+         <div class="map-container" style="display: flex; width: 100%;">
+            <div style="padding: 10px; width: 50%;">
+               <p class="endereco">R. Joaquim Nabuco, 320 - Jd. Aparecida, Alvorada - RS, 94850-610</p>
+               <a href="https://maps.app.goo.gl/CJAVG8A3nZHQMv4v5" target="_blank">Ver no Google Maps</a>
+            </div>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.5105928640805!2d-51.083394!3d-30.0222062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519755e25060425%3A0xcee871703ce314ee!2sLar%20para%20Idosos%20Recanto%20das%20Oliveiras!5e0!3m2!1spt-BR!2sbr!4v1688407195430!5m2!1spt-BR!2sbr"
+               width="50%" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+         <div class="map-container" style="display: flex; width: 100%;">
+            <div style="padding: 10px; width: 50%;">
+               <p class="endereco">R. Wenceslau, 265 - Santa Isabel, Viamão - RS, 94500-010
+               </p>
+               <a href="https://www.google.com/maps/place/Lar+Recanto+das+Oliveiras+Viam%C3%A3o/@-30.06615,-51.1125266,15z/data=!4m2!3m1!1s0x0:0xd450e74285c5bc25?sa=X&ved=2ahUKEwj92ci5jvP_AhVkspUCHWN9CyYQ_BJ6BAhJEAA&hl=pt-BR&ved=2ahUKEwj92ci5jvP_AhVkspUCHWN9CyYQ_BJ6BAhXEAg"
+                  target="_blank">Ver no Google Maps</a>
+            </div>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13811.914106016398!2d-51.1125266!3d-30.06615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4eb75fae3beacff%3A0xd450e74285c5bc25!2sLar%20Recanto%20das%20Oliveiras%20Viam%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1688407170787!5m2!1spt-BR!2sbr"
+               width="50%" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <p>Todos os direitos reservados &copy; 2023</p>
+      <a href="https://www.facebook.com/residencialrecantodasoliveiras" target="_blank">Visite nossa página no
+         Facebook</a>
+   </footer>
+</body>
+
+</html>
