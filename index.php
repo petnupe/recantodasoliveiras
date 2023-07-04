@@ -230,7 +230,7 @@ if ($_REQUEST['nome'] != null) {
                <img src="./imgs/photo5.jpg" alt="Imagem 6" class="img-fluid">
             </div>
             <div class="col-md-6">
-               <form action="#" method="GET">
+               <form action="#" method="POST">
                   <div class="form-group">
                      <label for="nome">Nome:</label>
                      <input type="text" class="form-control" id="nome" name="nome" required>
